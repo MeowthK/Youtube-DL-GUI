@@ -63,7 +63,7 @@
 
                 process.Start();
 
-                controlOutput.Text = "Please wait...\r\n";
+                controlOutput.Text += (controlOutput.Text.Length == 0 ? "" : "\r\n") + "Please wait...\r\n";
 
                 // Feed command to Console
                 process.StandardInput.WriteLine(argument);

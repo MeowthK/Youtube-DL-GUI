@@ -37,6 +37,8 @@
             this.btnDownload = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ArgContainer = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.tbAdvancedParams = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbArg11 = new VidDownloader.CBArg();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,6 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ArgContainer.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -106,7 +109,7 @@
             // btnDownload
             // 
             this.btnDownload.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDownload.Location = new System.Drawing.Point(151, 464);
+            this.btnDownload.Location = new System.Drawing.Point(153, 517);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(141, 40);
             this.btnDownload.TabIndex = 5;
@@ -127,14 +130,37 @@
             // ArgContainer
             // 
             this.ArgContainer.AutoScroll = true;
+            this.ArgContainer.Controls.Add(this.groupBox4);
             this.ArgContainer.Controls.Add(this.groupBox3);
             this.ArgContainer.Controls.Add(this.groupBox2);
             this.ArgContainer.Controls.Add(this.groupBox1);
             this.ArgContainer.Location = new System.Drawing.Point(20, 208);
             this.ArgContainer.Name = "ArgContainer";
             this.ArgContainer.Padding = new System.Windows.Forms.Padding(3);
-            this.ArgContainer.Size = new System.Drawing.Size(406, 250);
+            this.ArgContainer.Size = new System.Drawing.Size(406, 301);
             this.ArgContainer.TabIndex = 7;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.tbAdvancedParams);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox4.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(3, 245);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.groupBox4.Size = new System.Drawing.Size(400, 53);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Advanced Parameters";
+            // 
+            // tbAdvancedParams
+            // 
+            this.tbAdvancedParams.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAdvancedParams.Location = new System.Drawing.Point(9, 20);
+            this.tbAdvancedParams.Name = "tbAdvancedParams";
+            this.tbAdvancedParams.Size = new System.Drawing.Size(382, 22);
+            this.tbAdvancedParams.TabIndex = 1;
+            this.tbAdvancedParams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox3
             // 
@@ -291,7 +317,7 @@
             this.tbConsoleOutput.Name = "tbConsoleOutput";
             this.tbConsoleOutput.ReadOnly = true;
             this.tbConsoleOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbConsoleOutput.Size = new System.Drawing.Size(381, 444);
+            this.tbConsoleOutput.Size = new System.Drawing.Size(381, 497);
             this.tbConsoleOutput.TabIndex = 8;
             this.tbConsoleOutput.WordWrap = false;
             // 
@@ -301,15 +327,15 @@
             this.label3.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(428, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 17);
+            this.label3.Size = new System.Drawing.Size(112, 17);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Command Output:";
+            this.label3.Text = "Console Output:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 523);
+            this.ClientSize = new System.Drawing.Size(830, 576);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbConsoleOutput);
             this.Controls.Add(this.ArgContainer);
@@ -329,6 +355,8 @@
             this.Text = "  youtube-dl GUI by MeowthK";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ArgContainer.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -363,6 +391,8 @@
         private CBArg cbArg11;
         private System.Windows.Forms.TextBox tbConsoleOutput;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbAdvancedParams;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

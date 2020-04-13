@@ -21,8 +21,9 @@ namespace VidDownloader
             }
 
             var tbLoc = pControls.Find( "tbDestLoc", false )[ 0 ] as TextBox;
+            var tbAdvancedParams = pControls.Find("tbAdvancedParams", true)[0] as TextBox;
 
-            var pre_args = "-f best ";
+            var pre_args = tbAdvancedParams.TextLength == 0 ? "-f best " : tbAdvancedParams.Text + " ";
             foreach ( CBArg args in ArgControls.Args )
             {
                 if ( args.Checked )
